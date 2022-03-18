@@ -1,31 +1,31 @@
 import React from "react";
 
-function Nav({ projectsSelected, setProjectsSelected }) {
+function Nav({ displayedContent, setDisplayedContent }) {
 
   return (
     <>
       <nav>
         <ul>
           <li>
-            <span onClick={() => setProjectsSelected(false)}>
+            <span onClick={() => setDisplayedContent('about')}>
               About
             </span>
           </li>
           |
           <li>
-            <span onClick={() => setProjectsSelected(true)}>
+            <span onClick={() => setDisplayedContent('projects')}>
               Projects
             </span>
           </li>
           |
           <li>
-            <span onClick={() => setProjectsSelected(false)}>
+            <span onClick={() => setDisplayedContent('resume')}>
               Resume
             </span>
           </li>
           |
           <li>
-            <span onClick={() => setProjectsSelected(false)}>
+            <span onClick={() => setDisplayedContent('contact')}>
               Contact
             </span>
           </li>

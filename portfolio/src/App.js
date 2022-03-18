@@ -7,19 +7,16 @@ import './App.css';
 
 function App() {
 
-  const [projectsSelected, setProjectsSelected] = useState(false);
+  const [displayedContent, setDisplayedContent] = useState('about');
 
   return (
     <div className="App">
       <Header
-        projectsSelected={projectsSelected}
-        setProjectsSelected={setProjectsSelected} />
+        displayedContent={displayedContent}
+        setDisplayedContent={setDisplayedContent} />
       <main>
-        {projectsSelected ? (
-          <Projects></Projects>
-        ) : (
-          <About></About>
-        )}
+        {displayedContent === 'about' && <About />}
+        {displayedContent === 'projects' && <Projects />}
       </main>
       <Footer />
     </div>
