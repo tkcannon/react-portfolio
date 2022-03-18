@@ -5,23 +5,33 @@ function Projects() {
   const [projects] = useState([
     {
       title: 'project 1',
-      description: 'project 1'
+      description: 'project 1',
+      link: 'tkcannon.github.io/',
+      image: '../assets/images/placeholder.jpeg'
     },
     {
       title: 'project 2',
-      description: 'project 2'
+      description: 'project 2',
+      link: 'tkcannon.github.io/',
+      image: '../assets/images/placeholder.jpeg'
     },
     {
       title: 'project 3',
-      description: 'project 3'
+      description: 'project 3',
+      link: 'tkcannon.github.io/',
+      image: '../assets/images/placeholder.jpeg'
     },
     {
       title: 'project 4',
-      description: 'project 4'
+      description: 'project 4',
+      link: 'tkcannon.github.io/',
+      image: '../assets/images/placeholder.jpeg'
     },
     {
       title: 'project 5',
-      description: 'project 5'
+      description: 'project 5',
+      link: 'tkcannon.github.io/',
+      image: '../assets/images/placeholder.jpeg'
     }
   ], []);
 
