@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 function Nav() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <>
-
-
       <nav>
         <ul>
           <li> About </li>
@@ -21,7 +15,6 @@ function Nav() {
           <li> Contact </li>
         </ul>
       </nav>
-
     </>
   )
 }
