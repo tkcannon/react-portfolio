@@ -1,12 +1,15 @@
 import React from 'react';
 import Nav from '../Navigation';
 
-function Header() {
+function Header({ projectsSelected, setProjectsSelected }) {
 
   return (
     <header>
       <h1>Taylor Cannon</h1>
-      <Nav />
+      <Nav
+        projectsSelected={projectsSelected}
+        setProjectsSelected={setProjectsSelected}
+      />
     </header>
   )
 }
