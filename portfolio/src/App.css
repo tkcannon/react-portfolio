@@ -9,10 +9,20 @@ body {
 
 nav {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 header ul,
 footer ul {
   list-style: none;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  background-color: maroon;
+  border: blue solid 1px;
 }
