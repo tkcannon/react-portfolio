@@ -11,19 +11,16 @@ function Nav({ displayedContent, setDisplayedContent }) {
               About
             </span>
           </li>
-          |
           <li>
             <span onClick={() => setDisplayedContent('portfolio')}>
               Portfolio
             </span>
           </li>
-          |
           <li>
             <span onClick={() => setDisplayedContent('resume')}>
               Resume
             </span>
           </li>
-          |
           <li>
             <span onClick={() => setDisplayedContent('contact')}>
               Contact

@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <>
+    <section>
       <h2>Contact Me</h2>
       <form>
         <label>Name</label>
@@ -10,10 +10,10 @@ function Contact() {
         <label>Email</label>
         <input></input>
         <label>Message</label>
-        <textarea></textarea>
+        <textarea rows={5}></textarea>
       </form>
       <button>Send</button>
-    </>
+    </section>
   )
 }
 

@@ -4,9 +4,15 @@ function Footer() {
   return (
     <footer>
       <ul>
-        <li>(placholder: github)</li>
-        <li>(placholder: linkedin)</li>
-        <li>(placholder: stackskills)</li>
+        <li>
+          <i className="fa-brands fa-github"></i>
+        </li>
+        <li>
+          <i className="fa-brands fa-linkedin"></i>
+        </li>
+        <li>
+          <i className="fa-brands fa-stack-overflow"></i>
+        </li>
       </ul>
     </footer>
   )

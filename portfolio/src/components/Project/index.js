@@ -1,16 +1,18 @@
 import React from "react";
 
 function Project({ project }) {
+
   return (
     <>
-      <div className="project">
-        <div>
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <a href={project.link}>Link</a>
+      <a href={project.link}>
+        <div className="project">
+          <div className="project-details">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+          </div>
+          <img src={require('../../assets/images/' + project.image)} alt={project.title} />
         </div>
-        <img src={project.image} alt='placeholder'></img>
-      </div>
+      </a>
     </>
   );
 }
