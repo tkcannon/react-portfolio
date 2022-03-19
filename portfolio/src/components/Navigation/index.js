@@ -1,18 +1,34 @@
 import React from "react";
 
-function Nav() {
+function Nav({ displayedContent, setDisplayedContent }) {
 
   return (
     <>
       <nav>
         <ul>
-          <li> About </li>
+          <li>
+            <span onClick={() => setDisplayedContent('about')}>
+              About
+            </span>
+          </li>
           |
-          <li> Projects </li>
+          <li>
+            <span onClick={() => setDisplayedContent('portfolio')}>
+              Projects
+            </span>
+          </li>
           |
-          <li> Resume </li>
+          <li>
+            <span onClick={() => setDisplayedContent('resume')}>
+              Resume
+            </span>
+          </li>
           |
-          <li> Contact </li>
+          <li>
+            <span onClick={() => setDisplayedContent('contact')}>
+              Contact
+            </span>
+          </li>
         </ul>
       </nav>
     </>
