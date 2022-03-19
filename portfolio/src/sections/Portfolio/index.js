@@ -38,11 +38,14 @@ function Portfolio() {
 
   return (
     <section className="project-section">
-      <Project project={projects[0]}></Project>
-      <Project project={projects[1]}></Project>
-      <Project project={projects[2]}></Project>
-      <Project project={projects[3]}></Project>
-      <Project project={projects[4]}></Project>
+      <h2>Projects</h2>
+      <div>
+        <Project project={projects[0]}></Project>
+        <Project project={projects[1]}></Project>
+        <Project project={projects[2]}></Project>
+        <Project project={projects[3]}></Project>
+        <Project project={projects[4]}></Project>
+      </div>
     </section >
   )
 }

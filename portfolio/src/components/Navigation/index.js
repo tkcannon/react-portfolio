@@ -14,7 +14,7 @@ function Nav({ displayedContent, setDisplayedContent }) {
           |
           <li>
             <span onClick={() => setDisplayedContent('portfolio')}>
-              Projects
+              Portfolio
             </span>
           </li>
           |
