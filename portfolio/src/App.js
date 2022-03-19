@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <main>
         {displayedContent === 'about' && <About />}
         {displayedContent === 'projects' && <Projects />}
+        {displayedContent === 'contact' && <Contact />}
       </main>
       <Footer />
     </div>
