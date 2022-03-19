@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './sections/About';
 import Portfolio from './sections/Portfolio';
+import Resume from './sections/Resume';
 import Contact from './sections/Contact';
 import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
       <main>
         {displayedContent === 'about' && <About />}
         {displayedContent === 'portfolio' && <Portfolio />}
+        {displayedContent === 'resume' && <Resume />}
         {displayedContent === 'contact' && <Contact />}
       </main>
       <Footer />
