@@ -18,7 +18,7 @@ function Contact() {
     if (event.target.name === 'email') {
       const isValid = validateEmail(event.target.value);
       if (!isValid) {
-        setErrorMessage('Must provide valid email.');
+        setErrorMessage('must provide valid email.');
       } else {
         setErrorMessage('');
       }

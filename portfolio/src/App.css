@@ -48,12 +48,6 @@ footer li {
   font-size: 3rem;
 }
 
-footer li:hover,
-header li:hover {
-  color: var(--secondary-color);
-  transition: color 0.25s;
-}
-
 nav {
   font-size: 1.25rem;
   display: flex;
@@ -66,8 +60,10 @@ nav li {
 }
 
 nav li:hover {
+  color: var(--secondary-color);
   border-bottom: 1px solid;
   transition-timing-function: ease-in;
+  transition: ease 0.25s;
 }
 
 main {
@@ -98,22 +94,26 @@ h3 {
 
 form {
   width: 50%;
+  margin-bottom: 1vw;
 }
 
 form div {
   display: flex;
   flex-direction: column;
-  margin: 2vh 0;
 }
 
-input {
+label {
+  margin: 1vh 0;
+}
+
+input, textarea{
+  padding: 2px 5px;
   border: none;
   border-radius: 5px;
 }
 
-textarea {
-  border: none;
-  border-radius: 5px;
+input:focus, textarea:focus {
+  outline: 0;
 }
 
 button {
@@ -125,8 +125,19 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background-color: var(--accent-color);
+  transition: ease 0.25s;
+}
+
 a {
   text-decoration: none;
+  color: var(--text-primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+  transition: ease 0.25s;
 }
 
 .activeNav {

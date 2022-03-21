@@ -8,7 +8,7 @@ function Nav({ displayedContent, setDisplayedContent }) {
         <ul>
           <li className={`${displayedContent === 'about' && 'activeNav'}`} >
             <span onClick={() => setDisplayedContent('about')}>
-              About
+              About Me
             </span>
           </li>
           <li className={`${displayedContent === 'portfolio' && 'activeNav'}`} >
