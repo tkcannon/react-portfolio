@@ -5,6 +5,7 @@
 :root {
   --primary-color: #023047;
   --secondary-color: #006466;
+  --accent-color: #4d194d;
   --text-primary-color: #fff;
   --text-secondary-color: #ddd;
 }
@@ -49,7 +50,7 @@ footer li {
 
 footer li:hover,
 header li:hover {
-  color: var(--text-primary-color);
+  color: var(--secondary-color);
   transition: color 0.25s;
 }
 
@@ -159,18 +160,30 @@ a {
   margin: 1vh 1vw;
 }
 
+.github-link {
+  color: var(--text-primary-color);
+}
+
+.github-link:hover {
+  color: var(--accent-color);
+  transition: ease-in 0.25s;
+}
+
 .project-details {
-  padding: 1rem;
-  margin-top: 1rem;
-  max-width: 50%;
   position: absolute;
+  padding: 1rem;
   background-color: var(--primary-color);
-  opacity: 70%;
+  opacity: 25%;
 }
 
 .project:hover > .project-details {
   color: var(--text-primary-color);
   opacity: 100%;
+  transition: ease-in 0.25s;
+}
+
+.project-details:hover .github-link {
+  color: var(--secondary-color);
   transition: ease-in 0.25s;
 }
 
