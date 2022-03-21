@@ -4,7 +4,7 @@
 
 :root {
   --primary-color: #023047;
-  --secondary-color: #4d194d;
+  --secondary-color: #006466;
   --text-primary-color: #fff;
   --text-secondary-color: #ddd;
 }
@@ -25,9 +25,13 @@ body {
   color: var(--text-primary-color);
 }
 
-header,
-footer {
+header {
   background-color: rgba(2, 48, 71, 0.7);
+}
+
+footer {
+  margin-top: 50px;
+  border-top: 1px solid var(--text-primary-color);
 }
 
 header ul,
@@ -67,7 +71,6 @@ nav li:hover {
 
 main {
   padding: 0 10vw;
-  min-height: 70vh;
 }
 
 section {
@@ -93,8 +96,13 @@ h3 {
 }
 
 form {
+  width: 50%;
+}
+
+form div {
   display: flex;
   flex-direction: column;
+  margin: 2vh 0;
 }
 
 input {
@@ -107,8 +115,22 @@ textarea {
   border-radius: 5px;
 }
 
+button {
+  font-size: large;
+  padding: 10px;
+  color: var(--text-primary-color);
+  background-color: var(--secondary-color);
+  border: var(--primary-color) solid 1px;
+  border-radius: 5px;
+}
+
 a {
   text-decoration: none;
+}
+
+.activeNav {
+  color: var(--secondary-color);
+  border-left: 5px solid;
 }
 
 .projects {
@@ -141,4 +163,10 @@ a {
 
 .project img {
   max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
 }

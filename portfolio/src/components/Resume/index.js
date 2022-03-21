@@ -4,7 +4,7 @@ function Resume() {
   return (
     <section className="resume-section">
       <h2>Resume</h2>
-      <button><i class="fa-solid fa-download"></i></button>
+      <button><i className="fa-solid fa-download"></i></button>
       <div>
         <h3>Front End</h3>
         <ul>
