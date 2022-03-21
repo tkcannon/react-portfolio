@@ -5,35 +5,42 @@ function Portfolio() {
 
   const [projects] = useState([
     {
-      title: 'project 1',
-      description: 'project 1',
+      title: 'Fleet Keeper',
+      description: '',
       link: 'tkcannon.github.io/',
-      image: '0.jpg'
+      image: 'fleet-keeper.jpg'
     },
     {
-      title: 'project 2',
-      description: 'project 2',
+      title: 'Event-Buddy',
+      description: '',
       link: 'tkcannon.github.io/',
-      image: 'placeholder.jpg'
+      image: 'event-buddy.jpg'
     },
     {
-      title: 'project 3',
-      description: 'project 3',
-      link: 'tkcannon.github.io/',
-      image: 'placeholder.jpg'
+      title: 'Work Day Scheduler',
+      description: '',
+      link: 'https://tkcannon.github.io/work-day-scheduler/',
+      image: 'work-day-scheduler.gif'
     },
     {
-      title: 'project 4',
-      description: 'project 4',
-      link: 'tkcannon.github.io/',
-      image: 'placeholder.jpg'
+      title: 'The Tech Blog',
+      description: '',
+      link: 'https://secure-temple-36331.herokuapp.com/',
+      image: 'the-tech-blog.png'
     },
     {
-      title: 'project 5',
-      description: 'project 5',
-      link: 'tkcannon.github.io/',
-      image: 'placeholder.jpg'
+      title: 'Weather Dashboard',
+      description: '',
+      link: 'https://tkcannon.github.io/weather-dashboard/',
+      image: 'weather-dash.png'
+    },
+    {
+      title: 'Run Buddy',
+      description: 'A Module',
+      link: 'https://tkcannon.github.io/run-buddy',
+      image: 'run-buddy.png'
     }
+
   ], []);
 
   return (

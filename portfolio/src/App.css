@@ -3,19 +3,31 @@
 }
 
 :root {
-  --primary-color: maroon;
-  --secondary-color: darkgrey;
+  --primary-color: #023047;
+  --secondary-color: #4d194d;
+  --text-primary-color: #fff;
+  --text-secondary-color: #ddd;
 }
 
 body {
-  background-color: black;
+  background-image: radial-gradient(
+      circle at 35% top,
+      #006466,
+      #212f45,
+      #4d194d
+    ),
+    url(./assets/background.jpg);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-size: 1.125rem;
-  color: white;
+  color: var(--text-primary-color);
 }
 
 header,
 footer {
-  background-color: var(--primary-color);
+  background-color: rgba(2, 48, 71, 0.7);
 }
 
 header ul,
@@ -24,6 +36,7 @@ footer ul {
   display: flex;
   justify-content: space-around;
   padding: 1vw;
+  color: var(--text-secondary-color);
 }
 
 footer li {
@@ -32,8 +45,8 @@ footer li {
 
 footer li:hover,
 header li:hover {
-  color: darkgrey;
-  transition: color 0.5s;
+  color: var(--text-primary-color);
+  transition: color 0.25s;
 }
 
 nav {
@@ -53,25 +66,28 @@ nav li:hover {
 }
 
 main {
-  padding: 10vw;
+  padding: 0 10vw;
+  min-height: 70vh;
 }
 
 section {
-  background-color: var(--secondary-color);
   padding: 3vw;
 }
 
 h1 {
+  padding: 10px;
   font-size: 3rem;
 }
 
 h2 {
+  padding: 5px;
   font-size: 2rem;
   margin: 10px 0;
   border-bottom: 1px solid;
 }
 
 h3 {
+  padding: 3px;
   font-size: 1.5rem;
   border-bottom: 1px solid;
 }
@@ -95,32 +111,30 @@ a {
   text-decoration: none;
 }
 
-.project-section {
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .project {
-  color: var(--secondary-color);
-  max-width: 100%;
-  height: auto;
-  margin: 2vh auto;
+  color: var(--text-secondary-color);
+  max-height: 400px;
+  max-width: 400px;
+  margin: 1vh 1vw;
 }
 
 .project-details {
   padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  max-width: 50%;
   position: absolute;
   background-color: var(--primary-color);
   opacity: 70%;
 }
 
 .project:hover > .project-details {
-  color: white;
+  color: var(--text-primary-color);
   opacity: 100%;
   transition: ease-in 0.25s;
 }
