@@ -5,6 +5,13 @@ function Portfolio() {
 
   const [projects] = useState([
     {
+      title: 'T Shirt Paradise',
+      description: 'MERN Forum',
+      link: 'https://t-shirt-paradise.herokuapp.com/',
+      image: 't-shirt-paradise.png',
+      repo: 'https://github.com/Sessions21/t-shirt-paradise'
+    },
+    {
       title: 'Fleet Keeper ',
       description: 'Full Stack Project',
       link: 'https://whispering-hollows-87266.herokuapp.com/login',
@@ -39,13 +46,6 @@ function Portfolio() {
       image: 'weather-dash.png',
       repo: 'https://github.com/tkcannon/weather-dashboard'
     },
-    {
-      title: 'Run Buddy ',
-      description: 'Html Module',
-      link: 'https://tkcannon.github.io/run-buddy',
-      image: 'run-buddy.png',
-      repo: 'https://github.com/tkcannon/run-buddy'
-    }
 
   ], []);
 
